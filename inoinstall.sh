@@ -2,14 +2,20 @@
 #ino install script
 
 sudo apt-get update
-sudo apt-get install arduino-core gcc-avr avr-libc avrdude
+sudo apt-get install -y --force-yes arduino-core gcc-avr avr-libc avrdude
 #dependencies, raspberry pi specific?
 
 
-sudo apt-get install python-configobj python-jinja2 python-pip
+sudo apt-get install -y --force-yes python-configobj python-jinja2 python-pip
 sudo pip install glob2
+
+
+pushd ~
+
 git clone git://github.com/amperka/ino.git ~/ino
 #where does the octopi setup script put the git files it gets?
+
+popd
 
 #
 
