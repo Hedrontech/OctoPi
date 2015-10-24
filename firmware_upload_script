@@ -1,0 +1,7 @@
+upload firmware via yaml cli script,
+
+ino parameters
+-guess at USB (or specify default or find it with usbls)
+-dropdown list
+-initially just one option, hardware and firmware specified
+
